@@ -1,12 +1,63 @@
-# React + Vite
+# TaskFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TaskFlow is a task management application that allows users to manage their tasks efficiently. The application consists of two parts: the frontend and the backend.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Add, delete, and restore tasks
+- Clear trash functionality
+- Task management with a user-friendly interface
+- Responsive design
+
+## Technologies
+
+### Frontend
+
+- React
+- Axios
+- Font Awesome
+- CSS
+
+### Backend
+
+- Node.js
+- Express
+- MongoDB
+
+## Installation
+
+### Prerequisites
+
+- Node.js
+- MongoDB
+
+### Clone the repository
+
+```sh
+git clone https://github.com/DragonSnel/taskflow-frontend
+cd taskflow
+
+Install dependencies
+//Frontend
+cd taskflow-frontend
+npm install
+//Backend
+cd taskflow
+npm install
+
+//Usage
+cd taskflow
+npm start
+//Start the frontend server
+cd taskflow-frontend
+npm start
