@@ -1,63 +1,92 @@
-# TaskFlow
 
-TaskFlow is a task management application that allows users to manage their tasks efficiently. The application consists of two parts: the frontend and the backend.
+# 🧠 TaskFlow
 
-## Table of Contents
+TaskFlow is a modern task management application designed for simplicity, speed, and functionality. It features task CRUD operations, clean UI, and a dark-themed responsive layout — perfect for personal productivity.
 
-- [Features](#features)
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
+![TaskFlow Screenshot](taskflow1.jpg)
 
-## Features
+---
 
-- Add, delete, and restore tasks
-- Clear trash functionality
-- Task management with a user-friendly interface
-- Responsive design
+## 🚀 Features
 
-## Technologies
+- ✅ Add, view, delete tasks
+- 🗑️ Trash bin for soft deletes (future improvement)
+- 🔁 Fast, dynamic updates
+- 🎨 Minimalist dark UI with smooth UX
 
-### Frontend
+---
 
-- React
-- Axios
-- Font Awesome
-- CSS
+## 🛠 Tech Stack
 
-### Backend
+### Frontend:
+- React (with hooks)
+- Axios (for API communication)
+- CSS Modules / Dark theme
+- Vite (bundler)
 
-- Node.js
-- Express
-- MongoDB
+### Backend:
+- Node.js + Express.js
+- PostgreSQL + pg
+- dotenv + CORS
 
-## Installation
+---
 
-### Prerequisites
+## ⚙️ Installation
 
-- Node.js
-- MongoDB
+### 1. Clone repo
 
-### Clone the repository
-
-```sh
-git clone https://github.com/DragonSnel/taskflow-frontend
+```bash
+git clone https://github.com/DragonSnel/taskflow-backend
 cd taskflow
+```
 
-Install dependencies
-//Frontend
-cd taskflow-frontend
+### 2. Install backend
+
+```bash
+cd backend
 npm install
-//Backend
-cd taskflow
-npm install
+npm run dev
+```
 
-//Usage
-cd taskflow
-npm start
-//Start the frontend server
-cd taskflow-frontend
-npm start
+### 3. Install frontend
+
+```bash
+cd ../frontend
+npm install
+npm start  # or npm run dev if using Vite
+```
+
+---
+
+## 🌐 API Endpoints
+
+| Method | Route           | Description               |
+|--------|------------------|---------------------------|
+| GET    | `/api/tasks`     | Get all tasks             |
+| POST   | `/api/tasks`     | Create a new task         |
+| PUT    | `/api/tasks/:id` | Update a task             |
+| DELETE | `/api/tasks/:id` | Delete a task             |
+
+---
+
+## 📷 Interface Preview
+
+![Preview](taskflow1.jpg)
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first.
+
+---
+
+## 📄 License
+
+MIT
+
+---
+
+## 👤 Author
+
+Made by [@DragonSnel](https://github.com/DragonSnel)
